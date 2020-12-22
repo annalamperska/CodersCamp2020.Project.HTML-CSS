@@ -101,11 +101,7 @@ body {
 section {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  top: 30px;
-  margin-top: 30px;
-  height: 100hv;
-  margin-top: bottom;
+  margin-bottom: 110px;
 }
 
 .sectionRight {
@@ -181,7 +177,6 @@ section {
   position: absolute;
   left:50%;
   transform:translate(-50%, -50%);
-  margin-bottom: 50px;
 }
 
 .contactDetails {
