@@ -1,18 +1,142 @@
-<!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wrocławski Klub Piłki Stołowej</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-
-</head>
-
-<body>
-
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
-
-</body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a
+          class="socialMediaContainer"
+          href="https://www.facebook.com/pilkarzyki.wroclaw"
+          ><img
+            class="socialMediaIcon"
+            src="./img/fb_icon.png"
+            alt="Ikona z logiem Facebooka"
+        /></a>
+        <a class="logoContainer">
+          <img class="logo" src="./img/logo.png" alt="logo"
+        /></a>
+        <ul class="navItemsContainer">
+          <li class="navItem">
+            <a href="#club">Klub</a>
+          </li>
+          <li class="navItem">
+            <a href="#events">Turnieje</a>
+          </li>
+          <li class="navItem">
+            <a href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="club" class="club">
+      <div class="sectionLeft">
+        <div class="sectionTitleLeft">
+          <h2 class="title">Wrocławski Klub Piłki Stołowej</h2>
+        </div>
+        <div class="textBox left">
+          <p class="sectionText">
+            Witamy na stronie Wrocławskiego Klubu Piłki Stołowej, czyli
+            dyscypliny potocznie zwanej piłkarzykami. Pragniemy zainteresować
+            Was piłkarzykami jako źródłem dobrej rozrywki, jak również
+            emocjonującej rywalizacji sportowej. Nasz Klub jest w ścisłej
+            polskiej czołówce &mdash; w Klubowym Pucharze Polski 2017 zajęliśmy I
+            miejsce. Nasi zawodnicy są wielokrotnymi Mistrzami Polski, a nawet
+            Świata!
+          </p>
+          <p class="sectionText">
+            Nasze Centrum Treningowe znajduje się w klubie bilardowym <strong>Spider</strong>
+            przy ulicy Komandorskiej 147 we Wrocławiu.<br />
+            W zaprzyjaźnionym pubie <strong>Tawerna Pod Kilem</strong> (św. Mikołaja 56) również
+            można pograć za darmo na profesjonalnych stołach. Zapraszamy!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="events" class="events">
+      <div class="sectionRight">
+        <div class="sectionTitleRight">
+          <h2 class="title">Turnieje</h2>
+        </div>
+        <div class="textBox right">
+          <p class="sectionText">
+            Zapraszamy w każdą środę do naszego Centrum Treningowego &mdash; Spider
+            Bilard Klub przy ul. Komandorskiej 147 we Wrocławiu &mdash; na cykliczne
+            turnieje w piłkarzyki. Turnieje skierowane są do wszystkich
+            miłośników piłkarzyków, niezależnie od poziomu umiejętności.
+            Rozgrywamy turniej Draw Your Partner (DYP), gdzie każdy uczestnik
+            zapisuje się indywidualnie, a następnie z puli zapisanych zawodników
+            losujemy pary do turnieju. Jest to idealna okazja dla początkujących
+            graczy, aby zagrać w parze z najlepszymi! Konkretne terminy w
+            wydarzeniach na
+            <a href="https://www.facebook.com/pilkarzyki.wroclaw">Facebooku</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="sectionLeft">
+        <div class="sectionTitleLeft">
+          <h2 class="title">Kontakt</h2>
+        </div>
+        <div class="contactForm">
+          <div class="contactDetails">
+            <p class="address">
+              Stowarzyszenie<br /><strong>
+                Wrocławski Klub Piłki Stołowej<br
+              /></strong>
+              ul. Budziszyńska 34A/6<br />
+              54-434 Wrocław
+            </p>
+            <p class="organizanizationId">
+              KRS: 0000833887<br />
+              NIP: 8943152650<br />REGON: 385805857
+            </p>
+          </div>
+          <form action="index.html" method="POST">
+            <input
+              type="text"
+              class="formField"
+              id="name"
+              name="name"
+              placeholder="Imię i nazwisko"
+              required
+              minlength="2"
+              maxlength="20"
+              pattern="[a-zA-Z0-9]+"
+            /><br />
+            <input
+              type="text"
+              class="formField"
+              id="mail"
+              name="mail"
+              placeholder="Adres e-mail"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            /><br />
+            <input
+              type="text"
+              class="formField"
+              id="subject"
+              name="subject"
+              placeholder="Temat"
+            /><br />
+            <textarea
+              class="formField"
+              id="message"
+              name="message"
+              placeholder="Treść wiadomości"
+            ></textarea>
+            <br />
+            <button type="submit" class="submitButton" value="Wyślij">
+              Wyślij
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
